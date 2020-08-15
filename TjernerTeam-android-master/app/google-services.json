@@ -1,0 +1,85 @@
+{
+  "project_info": {
+    "project_number": "892618625335",
+    "firebase_url": "https://tjernerteam-android-3624d.firebaseio.com",
+    "project_id": "tjernerteam-android-3624d",
+    "storage_bucket": "tjernerteam-android-3624d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:892618625335:android:d74418a1fcdb087b37cab2",
+        "android_client_info": {
+          "package_name": "dk.Kea.TjernerTeamet.production"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "892618625335-95q5h0ioodvbmu11ggtq0ct0b05vmvqq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "dk.Kea.TjernerTeamet.production",
+            "certificate_hash": "d3b4da918af5f1c57aaf6389157a1acc20168166"
+          }
+        },
+        {
+          "client_id": "892618625335-jj2saosovp7f8s88k92106i4ofneelcm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCrWMCgQnPBnYxc8zNAVoCcydLbZkckLbE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "892618625335-jj2saosovp7f8s88k92106i4ofneelcm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:892618625335:android:faed94fa3b5a86b037cab2",
+        "android_client_info": {
+          "package_name": "dk.Kea.TjernerTeamet.staging"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "892618625335-p7e2qdqo2l1rn8mrh74frmbqudvfqfca.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "dk.Kea.TjernerTeamet.staging",
+            "certificate_hash": "d3b4da918af5f1c57aaf6389157a1acc20168166"
+          }
+        },
+        {
+          "client_id": "892618625335-jj2saosovp7f8s88k92106i4ofneelcm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCrWMCgQnPBnYxc8zNAVoCcydLbZkckLbE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "892618625335-jj2saosovp7f8s88k92106i4ofneelcm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

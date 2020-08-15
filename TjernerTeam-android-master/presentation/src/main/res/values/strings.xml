@@ -1,0 +1,96 @@
+<resources>
+    <string name="app_name">presentation</string>
+    <string name="available">Ledige jobs</string>
+    <string name="chat">Chat med os</string>
+    <string name="faq">Læs FAQ</string>
+    <string name="end_job">Afslut Job</string>
+    <string name="profile">Profil</string>
+    <string name="job_info">Job Info</string>
+    <string name="beskeder">Beskeder</string>
+
+    <string name="facebook_app_id">432891317343221</string>
+    <string name="fb_login_protocol_scheme">fb432891317343221</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+    <string name="tab_text_0">Search</string>
+    <string name="tab_text_1">Action</string>
+    <string name="tab_text_2">Drama</string>
+    <string name="tab_text_3">Comedy</string>
+    <string name="tab_text_4">Recommmeded</string>
+    <string name="tab_text_5">Top Rated</string>
+    <string name="tab_text_6">Popular</string>
+    <string name="tab_text_7">Now Playing</string>
+    <string name="tab_text_8">Saved</string>
+    <string name="tab_text_9">Horror</string>
+    <string name="test">Test</string>
+    <string name="fetch_shift">Fetch shift</string>
+    <string name="Welcome_message">Velkommen til Tjener Teamet</string>
+    <string name="job_oversigt">Job oversigt</string>
+    <string name="ans_g_nemt_freelance_arbejde_i_hele_hotel_og_resturationsbrancen_over_hele_danmark">Ansøg nemt freelance arbejde i hele hotel og \nresturationsbrancen over hele Danmark</string>
+    <string name="jobs_du_kan_s_ge">JOBS DU KAN SØGE</string>
+    <string name="obs_er_jobbet_der_ikke_s_er_den_allerede_besat">OBS: Er jobbet der ikke, så er det allerede besat</string>
+    <string name="mustLogin_txt">For at bruge appen, skal du logge ind via. Facebook</string>
+    <string name="other_options">Mere</string>
+    <string name="har_du_behov_for_at_kontakte_os">Har du behov for at kontakte os</string>
+    <string name="her_finder_du_svar_p_ofte_stillede_sp_rgsm_l">Her finder du svar på ofte stillede spørgsmål</string>
+    <string name="mere">Mere</string>
+    <string name="logo">Logo</string>
+    <string name="overarbejde">Overarbejde</string>
+    <string name="hvor">Hvor</string>
+    <string name="personalemad">Personalemad</string>
+    <string name="p_kl_dning">Påklædning</string>
+    <string name="transport_tillaeg">Transport Tillaeg</string>
+    <string name="ans_g_job">Ansøg Job</string>
+    <string name="slash">/</string>
+    <string name="hyphen">-</string>
+    <string name="intet_tillaeg">Intet tillæg</string>
+    <string name="tillaeg">Ja</string>
+    <string name="moneybagicon">moneybagicon</string>
+    <string name="tjenerteamet_logo">tjenerteamet logo</string>
+    <string name="calender_icon">calender icon</string>
+    <string name="udbetales">Udbetales</string>
+    <string name="login_sucess">Login success!</string>
+    <string name="logout">Logout</string>
+    <string name="button">Button</string>
+    <string name="message_fragment">message fragment</string>
+    <string name="end_shift_txt">Afslut Job</string>
+    <string name="login_information">Du er nu logget ind med din Facebook konto.</string>
+    <string name="edit_profile_txt">REDIGER PROFIL</string>
+    <string name="my_ratings">Mine ratings</string>
+    <string name="jobs_taken">Jobs taget</string>
+    <string name="cancellations">Aflysninger</string>
+    <string name="add_experience_txt">Tilføj erfaringer til din profil</string>
+    <string name="dash">-</string>
+    <string name="get_more_shift_btn">FÅ FLERE VAGTER</string>
+    <string name="get_more_shift_btn_2">START HER</string>
+    <string name="description_txt">Beskrivelse</string>
+    <string name="more_information_btn_txt">MERE INFORMATION</string>
+    <string name="Hello_user_txt">Hej</string>
+    <string name="count">0</string>
+    <string name="upcoming_shifts">KOMMENDE</string>
+    <string name="completed_shifts">AFSLUTTEDE</string>
+    <string name="completed_shift_txt">DINE AFSLUTTEDE VAGTER</string>
+    <string name="no_shift_txt">Ingen vagter pt.</string>
+    <string name="shifts_txt">VAGTER DU HAR FÅET</string>
+    <string name="message_txt">Du har ikke adgang. Du kan kun se beskeder for jobs som du er blevet booket til.</string>
+    <string name="notifications_indstillinger">notifications indstillinger</string>
+    <string name="snooze_notificationer">Snooze notificationer</string>
+    <string name="notifikation_indstillinger">Vil du stoppe notifikationer i en periode?</string>
+    <string name="snooze_notifikationer">Snooze notifikationer</string>
+    <string name="snooze">Hvor mange dage vil du snooze?</string>
+    <string name="snooze_btn">snooze</string>
+    <string name="annuller">Annuller</string>
+    <string name="min_snooze_amount">2 dage</string>
+    <string name="max_snooze_amount">30 dage</string>
+    <string name="Sluk_snooze">Sluk</string>
+    <string name="stop_snooze">Stop Snooze</string>
+    <string name="snooze_title">Snooze</string>
+    <string name="notifikationer_slukket">Notifikationer er slukket</string>
+    <string name="update_profile">Opdater din profil</string>
+    <string name="update_profile_txt">Her kan du opdatere din profil</string>
+
+
+</resources>

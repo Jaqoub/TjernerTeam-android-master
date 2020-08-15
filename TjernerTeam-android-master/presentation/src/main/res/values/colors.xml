@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Switches to light/dark depending on light/night theme -->
+    <color name="textColorPrimary">?android:attr/textColorPrimary</color>
+        <color name="colorPrimary">#7b4bff</color>
+        <color name="colorPrimaryDark">#6539ba</color>
+        <color name="colorAccent">#FF4081</color>
+        <color name="bgBottomNavigation">#fe485a</color>
+    <color name="custom_gold">#a58f60</color>
+    <color name="custom_darkgray">#414141</color>
+    <color name="custom_lightgray">#747474</color>
+</resources>

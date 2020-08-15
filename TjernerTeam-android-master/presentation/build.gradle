@@ -1,0 +1,89 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'dk.nstack.translation.plugin'
+
+translation {
+    appId = keys.appId
+    apiKey = keys.apiKey
+    acceptHeader = keys.acceptHeader
+}
+
+android {
+    compileSdkVersion sdks.compileSdkVersion
+    defaultConfig {
+        minSdkVersion sdks.minSdkVersion
+        targetSdkVersion sdks.targetSdkVersion
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    implementation project(':domain')
+    implementation project(':data')
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.6.2'
+    implementation "com.google.android.material:material:$versions.material"
+    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation "androidx.arch.core:core-common:$versions.archCore"
+    implementation "androidx.arch.core:core-runtime:$versions.archCore"
+    implementation "androidx.lifecycle:lifecycle-livedata-core:${versions.lifecycle}"
+    implementation "androidx.lifecycle:lifecycle-runtime:${versions.lifecycle}"
+    implementation "androidx.lifecycle:lifecycle-common:${versions.lifecycle}"
+    implementation "androidx.lifecycle:lifecycle-extensions:${versions.lifecycle}"
+    implementation "androidx.lifecycle:lifecycle-viewmodel:${versions.lifecycle}"
+    implementation "androidx.lifecycle:lifecycle-livedata:${versions.lifecycle}"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:${versions.lifecycle}"
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.1.0'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.0.0'
+    kapt "androidx.lifecycle:lifecycle-compiler:${versions.lifecycle}"
+    implementation "androidx.core:core-ktx:${versions.ktx}"
+    implementation "com.google.dagger:dagger-android:${versions.dagger}"
+    implementation "com.google.dagger:dagger-android-support:${versions.dagger}"
+    kapt "com.google.dagger:dagger-compiler:${versions.dagger}"
+    kapt "com.google.dagger:dagger-android-processor:${versions.dagger}"
+    implementation "dk.nodes.nstack:nstack-kotlin:$versions.nodes_nstack_kotlin"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:${versions.coroutines}"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:${versions.coroutines}"
+    testImplementation 'junit:junit:4.12'
+    implementation "io.reactivex.rxjava2:rxandroid:${versions.rx_android}"
+    implementation "io.reactivex.rxjava2:rxjava:${versions.rx_java}"
+    implementation "io.reactivex.rxjava2:rxkotlin:${versions.rx_kotlin}"
+    implementation "androidx.core:core-ktx:${versions.ktx}"
+    implementation "net.hockeyapp.android:HockeySDK:${versions.hockey_sdk}"
+    implementation "com.jakewharton.timber:timber:${versions.timber}"
+    implementation "androidx.navigation:navigation-fragment-ktx:${versions.navigation}"
+    implementation "androidx.navigation:navigation-ui-ktx:${versions.navigation}"
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+
+    implementation "com.google.android.material:material:1.0.0"
+    implementation 'com.github.bumptech.glide:glide:4.10.0'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'com.android.support:design:28.0.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.10.0'
+    implementation 'com.pierfrancescosoffritti.androidyoutubeplayer:core:10.0.5'
+    implementation 'com.android.support:palette-v7:28.0.0'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'com.android.support:customtabs:28.0.0'
+    implementation 'com.facebook.android:facebook-login:5.11.2'
+    implementation 'com.android.support:customtabs:23.3.0'
+    implementation 'com.google.firebase:firebase-messaging:17.3.4'
+
+    implementation("com.squareup.retrofit2:converter-gson:${versions.retrofit}") {
+        exclude module: "retrofit:${versions.retrofit}"
+
+    }
+
+}

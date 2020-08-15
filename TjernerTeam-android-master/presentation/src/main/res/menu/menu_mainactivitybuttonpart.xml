@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/available_jobs"
+        android:icon="@drawable/ic_star_black_24dp"
+        android:title="@string/available" />
+
+    <item
+        android:id="@+id/navigation_endjob"
+        android:icon="@drawable/ic_check_box_black_24dp"
+        android:title="@string/end_job" />
+
+
+    <item
+        android:id="@+id/other_options"
+        android:icon="@drawable/ic_menu_black_24dp"
+        android:title="@string/other_options" />
+
+</menu>
+

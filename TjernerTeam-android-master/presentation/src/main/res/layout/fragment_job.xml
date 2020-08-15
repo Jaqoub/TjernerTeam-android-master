@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.shift.JobFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/grey_bg"
+                android:layout_width="match_parent"
+                android:layout_height="205dp"
+                android:background="#E0E0E0"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/costumer_name_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textColor="@color/custom_darkgray"
+                app:layout_constraintBottom_toTopOf="@+id/address_city_txt"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/address_city_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="33dp"
+                android:layout_gravity="center_horizontal|bottom"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="3dp"
+                android:fontFamily="sans-serif"
+                android:gravity="center|start"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/costumer_name_txt" />
+
+            <TextView
+                android:id="@+id/event_date_monthday_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="33dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:textSize="23sp"
+                app:layout_constraintStart_toEndOf="@+id/event_date_weekday_txt"
+                app:layout_constraintTop_toBottomOf="@+id/address_city_txt" />
+
+            <TextView
+                android:id="@+id/event_date_weekday_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="33dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:textSize="23sp"
+                app:layout_constraintStart_toEndOf="@+id/date_icon"
+                app:layout_constraintTop_toBottomOf="@+id/address_city_txt" />
+
+            <TextView
+                android:id="@+id/event_date_month_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="33dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="5dp"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:textSize="23sp"
+                app:layout_constraintStart_toEndOf="@+id/slash"
+                app:layout_constraintTop_toBottomOf="@+id/address_city_txt" />
+
+            <ImageView
+                android:id="@+id/date_icon"
+                android:layout_width="35dp"
+                android:layout_height="33dp"
+                android:layout_marginStart="26dp"
+                android:layout_marginTop="5dp"
+                android:contentDescription="@string/calender_icon"
+                android:src="@drawable/ic_date_range_black_24dp"
+                app:layout_constraintEnd_toStartOf="@+id/event_date_monthday_txt"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/address_city_txt" />
+
+            <ImageView
+                android:id="@+id/salary_icon"
+                android:layout_width="35dp"
+                android:layout_height="33dp"
+                android:layout_marginStart="26dp"
+                android:layout_marginTop="10dp"
+                android:contentDescription="@string/moneybagicon"
+                android:src="@drawable/ic_monetization_on_black_24dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/date_icon" />
+
+            <TextView
+                android:id="@+id/salary_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="33dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:textColor="@color/custom_darkgray"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/salary_icon"
+                app:layout_constraintTop_toBottomOf="@+id/event_date_monthday_txt" />
+
+            <TextView
+                android:id="@+id/payment_date_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="33dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                app:layout_constraintStart_toEndOf="@+id/payment_date_title"
+                app:layout_constraintTop_toBottomOf="@+id/event_date_monthday_txt" />
+
+            <TextView
+                android:id="@+id/hourly_pay_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/salary_icon"
+            />
+
+            <TextView
+                android:id="@+id/event_type_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="27dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/custom_darkgray"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/grey_bg" />
+
+            <TextView
+                android:id="@+id/employee_type_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="27dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/employee_type_txt_rounded_corners"
+                android:gravity="center"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/event_type_txt"
+                app:layout_constraintTop_toBottomOf="@+id/grey_bg" />
+
+            <TextView
+                android:id="@+id/event_description_txt"
+                android:layout_width="0dp"
+                android:layout_height="65dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="30dp"
+                android:textColor="@color/custom_darkgray"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/event_type_txt" />
+
+            <TextView
+                android:id="@+id/address_txt"
+                android:layout_width="128dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="40dp"
+                android:textStyle="bold"
+                android:textColor="@color/custom_darkgray"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/event_description_txt" />
+
+            <TextView
+                android:id="@+id/dress_code_title"
+                android:layout_width="80dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/p_kl_dning"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/address_txt" />
+
+            <TextView
+                android:id="@+id/dress_code_txt"
+                android:layout_width="128dp"
+                android:layout_height="54dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="4dp"
+                android:textStyle="bold"
+                android:textColor="@color/custom_darkgray"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/dress_code_title" />
+
+            <TextView
+                android:id="@+id/staff_food_title"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:layout_marginStart="250dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/personalemad"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/address_txt" />
+
+            <TextView
+                android:id="@+id/staff_food_txt"
+                android:layout_width="92dp"
+                android:layout_height="54dp"
+                android:layout_marginStart="250dp"
+                android:layout_marginTop="4dp"
+                android:textStyle="bold"
+                android:textColor="@color/custom_darkgray"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/staff_food_title" />
+
+            <TextView
+                android:id="@+id/address_title"
+                android:layout_width="35dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="17dp"
+                android:layout_marginEnd="346dp"
+                android:layout_marginBottom="4dp"
+                android:text="@string/hvor"
+                app:layout_constraintBottom_toTopOf="@+id/address_txt"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/event_description_txt" />
+
+            <TextView
+                android:id="@+id/overtime_title"
+                android:layout_width="80dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/overarbejde"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/dress_code_txt"
+                tools:ignore="NotSibling" />
+
+            <TextView
+                android:id="@+id/transport_title"
+                android:layout_width="119dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="250dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/transport_tillaeg"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/dress_code_txt" />
+
+            <TextView
+                android:id="@+id/overtime_txt"
+                android:layout_width="100dp"
+                android:layout_height="33dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="4dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/overtime_title" />
+
+            <TextView
+                android:id="@+id/transport_txt"
+                android:layout_width="119dp"
+                android:layout_height="33dp"
+                android:layout_marginStart="250dp"
+                android:layout_marginTop="4dp"
+                android:textStyle="bold"
+                android:textColor="@color/custom_darkgray"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/transport_title"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/hyphen"
+                android:layout_width="wrap_content"
+                android:layout_height="33dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="@string/hyphen"
+                app:layout_constraintStart_toEndOf="@+id/salary_txt"
+                app:layout_constraintTop_toBottomOf="@+id/event_date_monthday_txt" />
+
+            <Button
+                android:id="@+id/request_job_btn"
+                android:layout_width="125dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="22dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/request_job_btn_rounded_corners"
+                android:drawableStart="@drawable/ic_send_black_24dp"
+                android:text="@string/ans_g_job"
+                android:textColor="#FFFFFF"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/transport_txt" />
+
+            <TextView
+                android:id="@+id/payment_date_title"
+                android:layout_width="wrap_content"
+                android:layout_height="33dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="@string/udbetales"
+                app:layout_constraintStart_toEndOf="@+id/hyphen"
+                app:layout_constraintTop_toBottomOf="@+id/event_date_monthday_txt" />
+
+            <TextView
+                android:id="@+id/slash"
+                android:layout_width="wrap_content"
+                android:layout_height="33dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="@string/slash"
+                android:textSize="23sp"
+                app:layout_constraintStart_toEndOf="@+id/event_date_monthday_txt"
+                app:layout_constraintTop_toBottomOf="@+id/address_city_txt" />
+
+            <TextView
+                android:id="@+id/event_duration_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="33dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:textSize="23sp"
+                app:layout_constraintStart_toEndOf="@+id/event_date_month_txt"
+                app:layout_constraintTop_toBottomOf="@+id/address_city_txt" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>
